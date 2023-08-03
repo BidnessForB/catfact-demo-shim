@@ -31,7 +31,7 @@ pipeline {
 
     stage('Postman CLI Login') {
       steps {
-        withCredentials([string(credentialsId: 'BRKC_CS_DEMO_KEY', variable: 'POSTMAN_API_KEY')]) {
+        withCredentials([string(credentialsId: 'BRKC-POSTMAN-V10-ENV', variable: 'POSTMAN_API_KEY')]) {
             sh 'postman login --with-api-key $POSTMAN_API_KEY'
         }
       }
@@ -39,13 +39,13 @@ pipeline {
 
     stage('Running collection') {
       steps {
-        sh 'postman collection run "16901629-52c951a4-a262-45a7-939e-18ef0d7f25a4" --integration-id "123817-${JOB_NAME}${BUILD_NUMBER}"'
+        sh 'postman collection run "${WORKSPACE}/postman/collections/Cat_Fact_API.json" --integration-id "139698-${JOB_NAME}${BUILD_NUMBER}"'
       }
     }
 
     stage('Running api linting') {
       steps {
-        sh 'postman api lint --integration-id 123817'
+        sh 'postman api lint c7d76376-2177-4b28-ac55-8bfed60a6e40 --integration-id 139698'
       }
     }
   }
