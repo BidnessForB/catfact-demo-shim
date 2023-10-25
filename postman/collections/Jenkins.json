@@ -1,0 +1,22 @@
+{
+	"info": {
+		"_postman_id": "bfd1c1c5-99f4-403a-9486-6b1cba0f1976",
+		"name": "Jenkins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "23889826-bfd1c1c5-99f4-403a-9486-6b1cba0f1976"
+	},
+	"item": [
+		{
+			"name": "Run pipeline",
+			"id": "4e7c04d9-2235-4cca-8701-f223476938a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

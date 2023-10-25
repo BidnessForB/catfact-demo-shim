@@ -10,6 +10,7 @@ id = c7d76376-2177-4b28-ac55-8bfed60a6e40
 [config.relations.collections]
 rootDirectory = postman/collections
 files[] = {"id":"23889826-667981c7-11dc-4db9-87d9-e1cc72619a15","path":"Cat_Fact_API.json","metaData":{}}
+files[] = {"id":"23889826-bfd1c1c5-99f4-403a-9486-6b1cba0f1976","path":"Jenkins.json","metaData":{}}
 
 [config.relations.collections.metaData]
 
